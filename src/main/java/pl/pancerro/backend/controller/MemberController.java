@@ -18,7 +18,6 @@ import javax.mail.MessagingException;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins = "*")
 @RequestMapping("/member")
 public class MemberController {
     private final FormService formService;
