@@ -17,7 +17,7 @@ import javax.mail.MessagingException;
 import java.util.List;
 
 @RestController()
-@CrossOrigin
+@CrossOrigin(origins = "https://ue-form-frontend-app.herokuapp.com")
 @RequestMapping("/admin")
 public class PanelAdminController {
     private final AdminPanelService adminPanelService;
