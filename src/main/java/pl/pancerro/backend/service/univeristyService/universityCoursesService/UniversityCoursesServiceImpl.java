@@ -25,8 +25,9 @@ public class UniversityCoursesServiceImpl implements UniversityCoursesService {
     }
 
     @Override
-    public void addUniversityCourses(UniversityCourses universityCourses) {
+    public boolean addUniversityCourses(UniversityCourses universityCourses) {
         universityCoursesRepo.save(universityCourses);
+        return true;
     }
 
     @Override

@@ -1,4 +1,4 @@
-package pl.pancerro.backend.controller;
+package pl.pancerro.backend.controller.memberController;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +18,6 @@ import javax.mail.MessagingException;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins = "https://ue-form-frontend-app.herokuapp.com")
 @RequestMapping("/member")
 public class MemberController {
     private final FormService formService;

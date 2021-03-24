@@ -25,8 +25,9 @@ public class UniversityDepartmentsServiceImpl implements UniversityDepartmentsSe
     }
 
     @Override
-    public void addUniversityDepartments(UniversityDepartments universityDepartments) {
+    public boolean addUniversityDepartments(UniversityDepartments universityDepartments) {
         universityDepartmentsRepo.save(universityDepartments);
+        return true;
     }
 
     @Override

@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface UniversityCoursesService {
     List<UniversityCourses> getUniversityCourses();
-    void addUniversityCourses(UniversityCourses universityCourses);
+    boolean addUniversityCourses(UniversityCourses universityCourses);
     boolean editUniversityCourses(UniversityCourses universityCourses);
     boolean deleteUniversityCourses(long id);
     List<Charts> getChartsCoursesInDepartments();
