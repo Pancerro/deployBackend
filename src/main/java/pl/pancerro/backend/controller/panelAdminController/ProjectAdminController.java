@@ -3,7 +3,6 @@ package pl.pancerro.backend.controller.panelAdminController;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import pl.pancerro.backend.model.Charts;
 import pl.pancerro.backend.model.Project;
 import pl.pancerro.backend.service.projectService.ProjectService;
 
