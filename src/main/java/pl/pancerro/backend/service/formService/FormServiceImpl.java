@@ -58,7 +58,7 @@ public class FormServiceImpl implements FormService{
         return webStarterDescService.getWebStarterDesc();
     }
     @Override
-    public boolean sendForm(Member member, long idProject) {
+    public boolean sendForm(Member member, long idProject) throws MessagingException {
         Project project = projectService.getProjectById(idProject);
         if(this.memberService.addMember(member,project)){
             Optional<AcceptEmail> optionalAcceptEmail = Optional.ofNullable(acceptEmailService.getAcceptEmail());
@@ -67,7 +67,7 @@ public class FormServiceImpl implements FormService{
                         optionalAcceptEmail.get().getSubjectEmail(),
                         optionalAcceptEmail.get().getTextEmail(),
                         optionalAcceptEmail.get().isHtml());
-                //memberService.sendEmail(myEmail);
+                memberService.sendEmail(myEmail);
             }
             return true;
     } else return false;
