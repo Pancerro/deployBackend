@@ -17,7 +17,6 @@ public class MailService {
     }
 
     public void sendMail(String to, String subject, String text, boolean isHtmlContent) throws MessagingException {
-        System.out.println(to + subject + text);
         MimeMessage mimeMessage = javaMailSender.createMimeMessage();
         MimeMessageHelper mimeMessageHelper = new MimeMessageHelper(mimeMessage, true);
         mimeMessageHelper.setTo(to);
