@@ -31,10 +31,8 @@ public class BasicInformation {
     @NotEmpty
     @Column(name = "Numer_dowodu_osobistego")
     private String idNumber; //numer dowodu osobistego
-    @Min(0)
-    @Max(130)
     @Column(name = "Wiek")
-    private int age;
+    private String age;
     @Enumerated(EnumType.STRING)
     @Column(name = "Poziom_Wyksztalcenia")
     private Education education;
@@ -42,7 +40,7 @@ public class BasicInformation {
     public BasicInformation() {
     }
 
-    public BasicInformation(String name, String surname, String pesel, String idNumber, int age, Education education) {
+    public BasicInformation(String name, String surname, String pesel, String idNumber, String age, Education education) {
         this.name = name;
         this.surname = surname;
         this.pesel = pesel;
@@ -91,11 +89,11 @@ public class BasicInformation {
         this.idNumber = idNumber;
     }
 
-    public int getAge() {
+    public String getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(String age) {
         this.age = age;
     }
 

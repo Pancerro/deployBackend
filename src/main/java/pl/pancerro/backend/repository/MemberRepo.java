@@ -8,7 +8,7 @@ import javax.persistence.Tuple;
 import java.util.List;
 
 public interface MemberRepo extends JpaRepository<Member,Long> {
-    @Query(value = "SELECT informacje_podstawowe.wiek as age, COUNT(informacje_podstawowe.wiek) as countAge FROM informacje_podstawowe GROUP BY informacje_podstawowe.wiek;",nativeQuery = true)
+    @Query(value = "SELECT RIGHT(informacje_podstawowe.wiek,4) as age, COUNT(informacje_podstawowe.imie) as countAge FROM informacje_podstawowe GROUP BY informacje_podstawowe.wiek;",nativeQuery = true)
     List<Tuple> getCountMemberInAge();
     @Query(value = "SELECT LEFT(RIGHT(informacje_podstawowe.pesel,2),1) as sex, COUNT(informacje_podstawowe.imie) as countSex FROM informacje_podstawowe GROUP BY informacje_podstawowe.pesel;",nativeQuery = true)
     List<Tuple> getCountSexInMember();

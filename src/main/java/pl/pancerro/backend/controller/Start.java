@@ -70,7 +70,7 @@ public class Start {
 
         //dane do uzytkownika
         AdditionalInformation additionalInformation = new AdditionalInformation(false,false,"","","","","","",false,"","","","","","");
-        BasicInformation basicInformation = new BasicInformation("Blazej","Karabin","97102704691","21154",23, Education.Wyzsze);
+        BasicInformation basicInformation = new BasicInformation("Blazej","Karabin","97102704691","21154","23.01.1996", Education.Wyzsze);
         ContactDetails contactDetails = new ContactDetails("Metalowa","2b","Gdynia","Gdynia","81-146","Gdynia","Gdynia", Voivodeship.Pomorskie, Area.Miejski,"506-553-353","pancerro@gmail.com");
         DirectionOfEducation directionOfEducation = new DirectionOfEducation("Akademia Pana Kleksa","Informatyczny","Informatyka","Proramowanie", DegreeOfStudy.PierwszyStopien,"1997");
         LaborMarketStatus laborMarketStatus = new LaborMarketStatus(true,true,true,true,false,false,false,false,false,false,false,false,false,"","",false,false,false);
@@ -109,7 +109,7 @@ public class Start {
         memberRepo.save(member);
         saveMemberToProjectRepo.save(saveMemberToProject);
         Member member1 = new Member(
-                new BasicInformation("Adrian","Lawecki","97102704691","21154",23, Education.Brak),
+                new BasicInformation("Adrian","Lawecki","97102704691","21154","23.11.1996", Education.Brak),
                 new ContactDetails("Metalowa","2b","Gdynia","Gdynia","81-146","Gdynia","Gdynia", Voivodeship.Pomorskie, Area.Miejski,"506-553-353","pancerro@gmail.com"),
                 new LaborMarketStatus(true,true,true,true,false,false,false,false,false,false,false,false,false,"","",false,false,false),
                 new DirectionOfEducation("Akademia Pana Kleksa","Informatyczny","Informatyka","Proramowanie", DegreeOfStudy.PierwszyStopien,"1997"),
@@ -136,7 +136,7 @@ public class Start {
 
         //dane do uzytkownika
         AdditionalInformation additionalInformation2 = new AdditionalInformation(false,false,"","","","","","",false,"","","","","","");
-        BasicInformation basicInformation2 = new BasicInformation("Andrzej","Madry","97102704691","221221",52, Education.Podstawowe);
+        BasicInformation basicInformation2 = new BasicInformation("Andrzej","Madry","97102704691","221221","31.01.2001", Education.Podstawowe);
         ContactDetails contactDetails2 = new ContactDetails("Zelazna","22b","Gdansk","Gdynia","81-146","Gdynia","Gdynia", Voivodeship.Lodzkie, Area.Miejski,"507-553-353","panzerro@gmail.com");
         DirectionOfEducation directionOfEducation2 = new DirectionOfEducation("Akademia Pana Kleksa","Informatyczny","Informatyka","Programowanie", DegreeOfStudy.TrzeciStopien_Doktoranckie,"2007");
         LaborMarketStatus laborMarketStatus2 = new LaborMarketStatus(true,true,true,true,false,false,false,false,false,false,false,false,false,"","",false,false,true);
