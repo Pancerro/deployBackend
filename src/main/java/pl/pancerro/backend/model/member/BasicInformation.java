@@ -31,7 +31,7 @@ public class BasicInformation {
     @NotEmpty
     @Column(name = "Numer_dowodu_osobistego")
     private String idNumber; //numer dowodu osobistego
-    @Column(name = "Wiek")
+    @Column(name = "Data_Urodzenia")
     private String age;
     @Enumerated(EnumType.STRING)
     @Column(name = "Poziom_Wyksztalcenia")
